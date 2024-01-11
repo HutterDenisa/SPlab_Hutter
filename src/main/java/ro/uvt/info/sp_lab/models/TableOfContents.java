@@ -1,9 +1,17 @@
 package ro.uvt.info.sp_lab.models;
 
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.Data;
 import ro.uvt.info.sp_lab.services.Visitor;
 
+
+@Data
+@Entity
 public class TableOfContents implements Element{
+    @Id
+    private int id;
     private String something;
 
     @Override
